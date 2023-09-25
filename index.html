@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page -->
+    <title>HTML - Cours</title>
+    <link rel="shortcut icon" href="./assets/images/fav-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div>
+            <!-- Insertion d'icône avant le titre -->
+            <h1><span>&#x2712;</span> Texte - Titre H1</h1>
+            <P>Texte normal. <em>Ici un texte en italique</em>. <strong>Ici un texte ne gras</strong>.
+                <span>L'élément
+                    span ne revient pas à la ligne</span>.
+            </P>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem hic magni vel qui, harum
+                assumenda
+                cumque dolorum reprehenderit doloribus totam rem? Exercitationem sit quia laborum?</p>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h2>Insertion d'une photo - Titre H2</h2>
+            <img src="./assets/images/neom-llB7NfKnS8A-unsplash.jpg" alt="nageur en fond marin" height="300">
+        </div>
+        <div>
+            <H3>Listes - Titre H3</H3>
+            <ul>
+                <li>UL = Unordered List</li>
+                <li>UL = Unordered List</li>
+                <li>UL = Unordered List</li>
+            </ul>
+            <ol>
+                <li>OL = Ordered List</li>
+                <li>OL = Ordered List</li>
+                <li>OL = Ordered List</li>
+            </ol>
+        </div>
+        <div>
+            <h4>Tableaux - Titre H4</h4>
+            <table border="1" width="50%">
+                <!-- Légende -->
+                <caption>populations d'europe</caption>
+                <!-- En-tête -->
+                <thead>
+                    <!-- table row -->
+                    <tr>
+                        <th>Pays</th>
+                        <th>populations</th>
+                    </tr>
+                </thead>
+                <!-- Corps du tableau -->
+                <tbody>
+                    <tr>
+                        <td>France</td>
+                        <td>67M</td>
+                    </tr>
+                    <tr>
+                        <td>Allemagne</td>
+                        <td>83M</td>
+                    </tr>
+                    <tr>
+                        <td>Espagne</td>
+                        <td>47M</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h5>Liens - Titre H5</h5>
+            <a href="https://www.google.com/" target="_blank">Google</a>
+            <br>
+            <a href="https://www.toptal.com/designers/htmlarrows/symbols/">Icônes en HTML</a>
+        </div>
+        <div>
+            <h6>Vidéo - Titre H6</h6>
+            <!-- Autoplay joue automatiquement, muted(sans le son) -->
+            <video src="./assets/video/sunrise(540p).mp4" autoplay loop muted height="250px"></video>
+        </div>
+    </section>
+    <br>
+    <!-- Formulaire -->
+    <section>
+        <h2>Formulaire</h2>
+        <form>
+            <!-- label for=name est connecté à l'input avec son id=name -->
+            <label for="name">Nom</label>
+            <input id="name" type="text" placeholder="Entrez votre nom">
+            <br><br>
+            <label for="age">Age</label>
+            <!-- Par pas de 1, à partir de 18 ans -->
+            <input type="number" name="age" id="age" min="0" max="99" step="1" value="18">
+            <br><br>
+            <!-- Input select -->
+            <label for="genre">Genre</label>
+            <!-- Menu déroulant -->
+            <select id="genre">
+                <option value="homme">Homme</option>
+                <!-- Sélection par défaut -->
+                <option selected value="femme">Femme</option>
+            </select><br>
+            <!-- Input radio | Relier entrent eux avec "name" -->
+            <div>
+                <!-- Selection de base "checked" -->
+                <input type="radio" name="type" id="humain" checked>
+                <label for="humain">Humain</label>
+
+                <input type="radio" name="type" id="chien">
+                <label for="dog">Chien</label>
+
+                <input type="radio" name="type" id="chat">
+                <label for="cat">chat</label>
+            </div>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Entrez votre demande ici..."></textarea><br>
+
+            <!-- Input checkbox -->
+            <label for="">
+                <input type="checkbox" name="" id="">Accepter les CGV
+            </label>
+            <br><br>
+            <input type="submit" value="Valider">
+        </form>
+    </section>
+    <br><br>
+    <!-- Mail & envoi de fichier -->
+    <footer>
+        <!-- Mail -->
+        <a href="mailto:monmail@gmail.com">Me contactez</a>
+        <br><br>
+        <!-- Envoyez un fichier à l'utilisateur -->
+        <a href="./assets/doc/notice.txt" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+</body>
+
+</html>
